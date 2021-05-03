@@ -1,0 +1,26 @@
+<mat-nav-list>
+  <div class="sidebar-wrap">
+    <div class="logo">
+      <h2>LOGO</h2>
+    </div>
+  </div>
+
+  <div class="nav-items">
+    <a mat-list-item routerLinkActive="list-item-active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">
+      <mat-icon aria-hidden="false">dashboard</mat-icon> Dashboard
+    </a>
+    <a (click)="this.expand = !this.expand" mat-list-item routerLinkActive="list-item-active" routerLink="/masters">
+      <mat-icon aria-hidden="false">face</mat-icon> Masters
+      <mat-icon fxFlex fxLayoutAlign="flex-end" aria-hidden="false">expand_more</mat-icon>
+    </a>
+
+    <div class="masters-expand" *ngIf="expand">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="port-master">
+        <mat-icon class="md-18" aria-hidden="false">face</mat-icon> Port Master
+      </a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/shipping-master">
+        <mat-icon class="md-18" aria-hidden="false">face</mat-icon> Shipping Company Master
+      </a>
+    </div>
+  </div>
+</mat-nav-list>

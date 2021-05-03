@@ -1,0 +1,47 @@
+mat-nav-list {
+  background: #0a144e;
+  height: 100%;
+  color: #bababa !important;
+
+  .logo {
+    text-align: center;
+    h2 {
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .nav-items {
+    margin-top: 30px;
+    a {
+      color: #b3b3b3 !important;
+      font-size: 14px !important;
+      font-weight: 100;
+      mat-icon {
+        margin-right: 8px;
+      }
+    }
+
+    a:hover {
+      background-color: #84c042;
+      color: #fafafa !important;
+    }
+
+    .masters-expand {
+      a {
+        font-size: 12px !important;
+        mat-icon {
+          height: 18px;
+          width: 18px;
+          font-size: 20px;
+          margin-right: 13px;
+        }
+      }
+    }
+    .list-item-active {
+      background-color: #84c042;
+      color: #fff !important;
+      font-weight: 300;
+    }
+  }
+}

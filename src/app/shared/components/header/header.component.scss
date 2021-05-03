@@ -1,0 +1,18 @@
+mat-toolbar {
+  background-color: #262d69 !important;
+}
+
+.profile-thumbnail {
+  span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #bdbdbd;
+  }
+  img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+}
